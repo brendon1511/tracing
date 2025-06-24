@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Plot Map Tool</title>
+  <link rel="icon" type="image/png" href="data:image/jpeg;base64,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">
+
+  <center>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    #controls { margin-bottom: 10px; }
+    canvas { border: 1px solid #888; }
+    #tooltip {
+      position: absolute;
+      display: none;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      pointer-events: none;
+      font-size: 14px;
+      z-index: 10;
+    }
+    .status { margin-top: 15px; }
+    .status span {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 4px 8px;
+      border-radius: 4px;
+      color: white;
+    }
+    .Available { background: orange; }
+    .Pending { background: yellow; }
+    .Booked { background: green; }
+    .Sold { background: red; }
+
+    #downloadBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    #downloadBtn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+<center>
+  <h2>🗺️ Plot Mapping Tool</h2>
+</center>
+
+<div id="controls">
+  <input type="file" id="imageUpload" accept="image/*">
+  <select id="statusSelect">
+    <option>Available</option>
+    <option>Pending</option>
+    <option>Booked</option>
+    <option>Sold</option>
+  </select>
+  <button onclick="startDrawing()">Draw Plot</button>
+  <button onclick="stopDrawing()">Stop Drawing</button>
+</div>
+
+<canvas id="c" width="900" height="600" tabindex="1"></canvas>
+<div id="tooltip"></div>
+
+<button id="downloadBtn" onclick="downloadCSV()">Download Data</button>
+
+<div class="status">
+  <strong>Status:</strong>
+  <span class="Available">Available</span>
+  <span class="Pending">Pending</span>
+  <span class="Booked">Completed</span>
+  <span class="Sold">Sold</span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+<script>
+const canvas = new fabric.Canvas('c');
+canvas.selection = false;
+canvas.setWidth(900);
+canvas.setHeight(600);
+
+const tooltip = document.getElementById('tooltip');
+const statusSelect = document.getElementById('statusSelect');
+
+const colors = {
+  Available: 'orange',
+  Pending: 'yellow',
+  Booked: 'green',
+  Sold: 'red'
+};
+
+let drawing = false, startX, startY, rect ;
+
+function checkOverlap(a, b) {
+  return !(
+    a.left + a.width <= b.left ||
+    a.left >= b.left + b.width ||
+    a.top + a.height <= b.top ||
+    a.top >= b.top + b.height
+  );
+}
+
+function savePlotsToStorage() {
+  const plotData = canvas.getObjects('rect').map(obj => ({
+    left: obj.left,
+    top: obj.top,
+    width: obj.width,
+    height: obj.height,
+    status: obj.status
+  }));
+  localStorage.setItem('plots', JSON.stringify(plotData));
+}
+
+function loadPlotsFromStorage() {
+  const savedImage = localStorage.getItem('backgroundImage');
+  if (savedImage) {
+    fabric.Image.fromURL(savedImage, img => {
+      canvas.setBackgroundImage(img, canvas.renderAll.bind(canvas), {
+        scaleX: canvas.width / img.width,
+        scaleY: canvas.height / img.height
+      });
+    });
+  }
+
+  const saved = localStorage.getItem('plots');
+  if (saved) {
+    const plots = JSON.parse(saved);
+    plots.forEach(p => {
+      const rect = new fabric.Rect({
+        left: p.left,
+        top: p.top,
+        width: p.width,
+        height: p.height,
+        fill: 'transparent',
+        stroke: colors[p.status],
+        strokeWidth: 2,
+        selectable: true
+      });
+      rect.status = p.status;
+      canvas.add(rect);
+    });
+    canvas.renderAll();
+  }
+}
+
+function startDrawing() {
+  drawing = true;
+  canvas.isDrawingMode = false;
+
+  canvas.on('mouse:down', e => {
+    if (!drawing) return;
+    const p = canvas.getPointer(e.e);
+    startX = p.x;
+    startY = p.y;
+
+    const tempRect = new fabric.Rect({
+      left: startX,
+      top: startY,
+      width: 1,
+      height: 1
+    });
+
+    const isOverlapping = canvas.getObjects('rect').some(obj => checkOverlap(obj, tempRect));
+    if (isOverlapping) {
+      alert('This area has already been traced.');
+      return;
+    }
+
+    rect = new fabric.Rect({
+      left: startX, top: startY,
+      width: 0, height: 0,
+      fill: 'transparent',
+      stroke: colors[statusSelect.value],
+      strokeWidth: 2,
+      selectable: true
+    });
+    rect.status = statusSelect.value;
+    canvas.add(rect);
+  });
+
+  canvas.on('mouse:move', e => {
+    if (!drawing || !rect) return;
+    const p = canvas.getPointer(e.e);
+    rect.set({
+      width: Math.abs(p.x - startX),
+      height: Math.abs(p.y - startY),
+      left: Math.min(p.x, startX),
+      top: Math.min(p.y, startY)
+    });
+    canvas.renderAll();
+  });
+
+  canvas.on('mouse:up', e => {
+    if (!rect) return;
+
+    const isOverlapping = canvas.getObjects('rect').some(obj => obj !== rect && checkOverlap(obj, rect));
+    if (isOverlapping) {
+      alert('Trace is overlapped');
+      canvas.remove(rect);
+    } else {
+      const width = Math.round(rect.width);
+      const height = Math.round(rect.height);
+      alert(`Plot created!\nWidth: ${width}px\nHeight: ${height}px`);
+      savePlotsToStorage();
+    }
+
+    rect = null;
+  });
+}
+
+function stopDrawing() {
+  drawing = false;
+  canvas.off('mouse:down');
+  canvas.off('mouse:move');
+  canvas.off('mouse:up');
+}
+
+document.getElementById('imageUpload').onchange = e => {
+  const reader = new FileReader();
+  reader.onload = f => {
+    const dataUrl = f.target.result;
+    localStorage.setItem('backgroundImage', dataUrl);
+    fabric.Image.fromURL(dataUrl, img => {
+      canvas.setBackgroundImage(img, canvas.renderAll.bind(canvas), {
+        scaleX: canvas.width / img.width,
+        scaleY: canvas.height / img.height
+      });
+    });
+  };
+  reader.readAsDataURL(e.target.files[0]);
+};
+
+canvas.on('mouse:over', e => {
+  if (e.target && e.target.status) {
+    tooltip.innerHTML = `<b>Status:</b> ${e.target.status}`;
+    tooltip.style.display = 'block';
+  }
+});
+
+canvas.on('mouse:move', e => {
+  tooltip.style.left = e.e.pageX + 10 + 'px';
+  tooltip.style.top = e.e.pageY + 10 + 'px';
+});
+
+canvas.on('mouse:out', () => {
+  tooltip.style.display = 'none';
+});
+
+canvas.on('mouse:down', e => {
+  if (!drawing && e.target) {
+    canvas.setActiveObject(e.target);
+  }
+});
+
+canvas.on('mouse:dblclick', e => {
+  if (e.target && e.target.status && !drawing) {
+    const newStatus = prompt('Update status:', e.target.status);
+    if (newStatus in colors) {
+      e.target.status = newStatus;
+      e.target.set({ stroke: colors[newStatus] });
+      canvas.renderAll();
+      savePlotsToStorage();
+    }
+  }
+});
+
+document.addEventListener('keydown', e => {
+  if ((e.key === 'Delete' || e.key === 'Backspace') && canvas.getActiveObject()) {
+    const obj = canvas.getActiveObject();
+    const confirmDelete = confirm('Delete this plot?');
+    if (confirmDelete) {
+      canvas.remove(obj);
+      canvas.discardActiveObject();
+      canvas.renderAll();
+      savePlotsToStorage();
+    }
+  }
+});
+
+function downloadCSV() {
+  const plots = canvas.getObjects('rect').map(obj => ({
+    left: obj.left,
+    top: obj.top,
+    width: obj.width,
+    height: obj.height,
+    status: obj.status
+  }));
+
+  if (plots.length === 0) {
+    alert("No plots to download.");
+    return;
+  }
+
+  let csvContent = "Left,Top,Width,Height,Status\n";
+  plots.forEach(p => {
+    csvContent += `${p.left},${p.top},${p.width},${p.height},${p.status}\n`;
+  });
+
+  const blob = new Blob([csvContent], { type: "text/csv" });
+  const link = document.createElement("a");
+  link.href = URL.createObjectURL(blob);
+  link.download = "plot_data.csv";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+}
+
+loadPlotsFromStorage();
+</script>
+</center>
+</body>
+</html>
